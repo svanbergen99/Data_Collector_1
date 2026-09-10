@@ -1,0 +1,15 @@
+{
+  "name": "hardened-data-collector",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22 <23"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "security:audit": "node tools/security-suite.mjs audit",
+    "security:runtime": "node tools/security-suite.mjs runtime",
+    "security:siege": "node tools/security-suite.mjs siege"
+  }
+}
